@@ -16,8 +16,12 @@ This project demonstrates a rudimentary blockchain implementation in Rust, provi
 
 ## Running the project
 
-1. Ensure you have Rust and Cargo installed on your system.
+1. Ensure you have [Rust](https://www.rust-lang.org/tools/install) and [Cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) installed on your system.
 2. Clone this repository
+    ```
+    git clone https://github.com/Prathiksha-Nataraja/rust-blockchain.git
+    ```
+
 3. Compile and Run
    ```
    cargo run
