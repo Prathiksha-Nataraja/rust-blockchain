@@ -6,34 +6,34 @@ use sha2::{Digest, Sha256};
 use chrono::prelude::*;
 
 #[derive(Debug, Clone, Serialize)]
-struct Transaction {
-    sender: String,
-    receiver: String,
-    amount: i32,
+pub struct Transaction {
+    pub sender: String,
+    pub receiver: String,
+    pub amount: i32,
 }
 
 #[derive(Debug, Serialize, Clone)]
 pub struct BlockHeader {
-    nonce: i32,
-    time_stamp: i32,
-    prev_hash: String,
-    merkle: String,
-    difficulty: i32,
+    pub nonce: i32,
+    pub time_stamp: i32,
+    pub prev_hash: String,
+    pub merkle: String,
+    pub difficulty: i32,
 }
 
 #[derive(Debug, Serialize)]
 pub struct Block {
-    header: BlockHeader,
-    count: i32,
-    transaction: Vec<Transaction>,
+    pub header: BlockHeader,
+    pub count: i32,
+    pub transaction: Vec<Transaction>,
 }
 
 pub struct Chain {
-    curr_tansc: Vec<Transaction>,
-    chain: Vec<Block>,
-    difficulty: i32,
-    miner_address: String,
-    reward: i32,
+    pub curr_tansc: Vec<Transaction>,
+    pub chain: Vec<Block>,
+    pub difficulty: i32,
+    pub miner_address: String,
+    pub reward: i32,
 }
 
 impl Chain {
